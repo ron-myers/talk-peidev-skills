@@ -1,0 +1,18 @@
+{
+  "name": "claude-skills-talk",
+  "version": "1.0.0",
+  "description": "Marp slide deck for a software developer group talk on Claude Code skills",
+  "private": true,
+  "scripts": {
+    "render": "node scripts/render-mermaid.mjs",
+    "pdf": "npm run render && marp slides.build.md --pdf -o slides.pdf --allow-local-files",
+    "pdf:preview": "node scripts/watch-pdf.mjs",
+    "html": "npm run render && marp slides.build.md --html -o slides.html --allow-local-files",
+    "preview": "npm run render && marp -p slides.build.md --allow-local-files"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.2",
+    "@mermaid-js/mermaid-cli": "^11.15.0"
+  },
+  "license": "MIT"
+}
