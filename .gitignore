@@ -1,0 +1,8 @@
+.context/
+candid/
+node_modules/
+diagrams/
+slides.build.md
+*.pdf
+*.html
+.DS_Store
